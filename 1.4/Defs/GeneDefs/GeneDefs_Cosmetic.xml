@@ -9,7 +9,10 @@
 		<description>Carriers of this gene have lizard-like frilled ears.</description>
 		<iconPath>UI/GeneIcons/Gene_EarFrilled</iconPath>
 		<graphicData>
-			<graphicPath>Pawn/FrilledEars/FrilledEars</graphicPath>
+			<graphicPaths>
+				<li>Pawn/FrilledEars/FrilledEars</li>
+				<li>Pawn/FrilledEars/FrilledEars1</li>
+			</graphicPaths>
 			<colorType>Skin</colorType>
 		</graphicData>
 		<symbolPack>
@@ -48,14 +51,19 @@
 	</GeneDef>
 
 	<!-- ====== Headbones ====== -->
-	
+
 	<GeneDef ParentName="GeneHeadboneBase">
 		<defName>VRESaurids_CenterFrill</defName>
 		<label>center-frill</label>
 		<description>Carriers of this gene grow a lizard-like frill protruding from the top of their head.</description>
 		<iconPath>UI/GeneIcons/Gene_HeadboneCenterFrill</iconPath>
 		<graphicData>
-			<graphicPath>Pawn/CenterFrill/CenterFrill</graphicPath>
+			<graphicPaths>
+				<li>Pawn/CenterFrill/CenterFrill</li>
+				<li>Pawn/CenterFrill/CenterFrill1</li>
+				<li>Pawn/CenterFrill/CenterFrill2</li>
+				<li>Pawn/CenterFrill/CenterFrill3</li>
+			</graphicPaths>
 			<colorType>Hair</colorType>
 			<layer>PostHeadgear</layer>
 		</graphicData>

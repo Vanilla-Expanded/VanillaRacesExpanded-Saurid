@@ -31,7 +31,7 @@
 			<li>Skin_Green</li>
 			<li>Skin_LightGray</li>
 			<li>MoveSpeed_Quick</li>
-			<li>ToxicEnvironmentResistance_Total</li>
+			<li>ToxicEnvironmentResistance_Partial</li>
 		</genes>
 	</XenotypeDef>
 

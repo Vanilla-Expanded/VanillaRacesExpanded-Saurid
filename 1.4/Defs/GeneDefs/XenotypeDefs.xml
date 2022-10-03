@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>VRESaurids_Saurid</defName>
+		<label>saurid</label>
+		<description>TODO</description>
+		<descriptionShort>Genetically engineered to survive on extremely low nutrition in the most arid environments, saurids adapt very well to hostile environments thanks to the oviparous nature of their reproduction as well as lizard-like genetic features. They prefer isolation and prefer to mate with other saurids.</descriptionShort>
+		<iconPath>UI/XenotypeIcons/Saurid</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonWaster</nameMaker>
+		<chanceToUseNameMaker>0.75</chanceToUseNameMaker>
+		<genes>
+			<li>VRESaurids_ScaleSkin</li>
+			<!-- <li>VRESaurids_Oviparous</li> -->
+			<!-- <li>VRESaurids_ColdBlooded</li> -->
+			<li>VRESaurids_CenterFrill</li>
+			<li>VRESaurids_FrilledEars</li>
+			<li>VRESaurids_GeckoTail</li>
+			<!-- <li>VRESaurids_LizardVoice</li> -->
+			<!-- <li>VRESaurids_SauridClaws</li> -->
+			<!-- <li>VRESaurids_Pheromones</li> -->
+			<li>Ears_Human</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Body_Hulk</li>
+			<li>RobustDigestion</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Skin_Blue</li>
+			<li>Skin_Green</li>
+			<li>Skin_LightGray</li>
+			<li>MoveSpeed_Quick</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+		</genes>
+	</XenotypeDef>
+
+</Defs>

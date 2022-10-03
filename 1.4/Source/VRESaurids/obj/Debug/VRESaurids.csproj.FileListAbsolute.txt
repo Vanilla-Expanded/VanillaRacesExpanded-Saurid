@@ -1,0 +1,4 @@
+C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Assemblies\VRESaurids.dll
+C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.AssemblyReference.cache
+C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.CoreCompileInputs.cache
+C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.dll

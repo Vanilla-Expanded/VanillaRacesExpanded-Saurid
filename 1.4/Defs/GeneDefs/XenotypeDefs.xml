@@ -12,14 +12,14 @@
 		<chanceToUseNameMaker>0.75</chanceToUseNameMaker>
 		<genes>
 			<li>VRESaurids_ScaleSkin</li>
-			<!-- <li>VRESaurids_Oviparous</li> -->
-			<!-- <li>VRESaurids_ColdBlooded</li> -->
+			<li>VRESaurids_Oviparous</li>
+			<li>VRESaurids_ColdBlooded</li>
 			<li>VRESaurids_CenterFrill</li>
 			<li>VRESaurids_FrilledEars</li>
 			<li>VRESaurids_GeckoTail</li>
 			<li>VRESaurids_LizardVoice</li>
-			<!-- <li>VRESaurids_SauridClaws</li> -->
-			<!-- <li>VRESaurids_Pheromones</li> -->
+			<li>VRESaurids_SauridClaws</li>
+			<li>VRESaurids_Pheromones</li>
 			<li>Ears_Human</li>
 			<li>Body_Thin</li>
 			<li>Body_Standard</li>
@@ -31,7 +31,7 @@
 			<li>Skin_Green</li>
 			<li>Skin_LightGray</li>
 			<li>MoveSpeed_Quick</li>
-			<li>ToxicEnvironmentResistance_Partial</li>
+			<li>ToxResist_Partial</li>
 		</genes>
 	</XenotypeDef>
 

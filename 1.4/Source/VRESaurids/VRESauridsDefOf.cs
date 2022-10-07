@@ -16,5 +16,10 @@ namespace VRESaurids
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(VRESauridsDefOf));
         }
+
+        public static GeneDef VRESaurids_ColdBlooded;
+
+        public static HediffDef VRESaurids_HypothermicSlowdown;
+        public static HediffDef VRESaurids_HyperthermicSlowdown;
     }
 }

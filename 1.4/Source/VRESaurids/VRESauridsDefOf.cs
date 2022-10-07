@@ -16,7 +16,5 @@ namespace VRESaurids
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(VRESauridsDefOf));
         }
-
-        public static GeneDef VRESaurids_ScaleSkin;
     }
 }

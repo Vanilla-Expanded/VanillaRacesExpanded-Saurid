@@ -31,6 +31,11 @@
 			<fur>VRESaurids_ScaleSkin</fur>
 			<tattoosVisible>true</tattoosVisible>
 		</graphicData>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<useSkinColorForFur>True</useSkinColorForFur>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 </Defs>

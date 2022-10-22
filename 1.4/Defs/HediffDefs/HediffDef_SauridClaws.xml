@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>VRESaurids_SauridClaws</defName>
+		<label>saurid claws</label>
+		<labelNoun>saurid claws</labelNoun>
+		<description>Carriers of this gene have hands that partially resemble dinosaur claws. This has a slight impact on their ability to manipulate objects, but allows them to deal deep cuts in melee combat.</description>
+		<descriptionHyperlinks>
+			<GeneDef>VRESaurids_SauridClaws</GeneDef>
+		</descriptionHyperlinks>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>claws</label>
+						<capacities>
+							<li>Scratch</li>
+						</capacities>
+						<power>13</power>
+						<cooldownTime>1.5</cooldownTime>
+						<surpriseAttack>
+							<extraMeleeDamages>
+								<li>
+									<def>Stun</def>
+									<amount>14</amount>
+								</li>
+							</extraMeleeDamages>
+						</surpriseAttack>
+					</li>
+				</tools>
+			</li>
+		</comps>
+	</HediffDef>
+
+</Defs>

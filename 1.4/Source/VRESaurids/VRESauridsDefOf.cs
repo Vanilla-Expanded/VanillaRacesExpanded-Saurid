@@ -17,9 +17,17 @@ namespace VRESaurids
             DefOfHelper.EnsureInitializedInCtor(typeof(VRESauridsDefOf));
         }
 
+        public static XenotypeDef VRESaurids_Saurid;
+
         public static GeneDef VRESaurids_ColdBlooded;
+        public static GeneDef VRESaurids_Oviparous;
+        public static GeneDef VRESaurids_Pheromones;
+        public static GeneDef VRESaurids_SauridClaws;
 
         public static HediffDef VRESaurids_HypothermicSlowdown;
         public static HediffDef VRESaurids_HyperthermicSlowdown;
+        public static HediffDef VRESaurids_EggFatigue;
+
+        public static ThingDef VRESaurids_HumanEgg;
     }
 }

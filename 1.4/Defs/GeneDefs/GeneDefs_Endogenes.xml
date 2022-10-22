@@ -68,6 +68,18 @@
 				</li>
 			</suffixSymbols>
 		</symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>VRESaurids_SauridClaws</hediff>
+						<bodyparts>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
 	</GeneDef>
 
 </Defs>

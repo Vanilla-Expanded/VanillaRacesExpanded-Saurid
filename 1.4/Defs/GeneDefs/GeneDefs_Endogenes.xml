@@ -8,7 +8,7 @@
 		<iconPath>UI/GeneIcons/Gene_HandsSaurid</iconPath>
 		<displayOrderInCategory>320</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>0</biostatMet>
 		<customEffectDescriptions>
 			<li>Causes cuts when using unarmed attacks.</li>
 		</customEffectDescriptions>

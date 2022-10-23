@@ -7,7 +7,6 @@
 		<description>Carriers of this gene lay eggs instead of giving live birth. Eggs need time and correct conditions to hatch.
 		</description>
 		<iconPath>UI/GeneIcons/Gene_Oviparous</iconPath>
-		<geneClass>Gene_Clotting</geneClass> <!-- TODO -->
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
@@ -86,7 +85,6 @@
 		<label>pheromones</label>
 		<description>Carriers of this gene excrete special pheromones that attract members of the same xenotype.</description>
 		<iconPath>UI/GeneIcons/Gene_Pheromones</iconPath>
-		<geneClass>Gene_Clotting</geneClass> <!-- TODO -->
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>

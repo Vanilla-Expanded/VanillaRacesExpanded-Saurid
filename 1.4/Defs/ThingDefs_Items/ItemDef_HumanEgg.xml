@@ -33,6 +33,9 @@
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
 			<preferability>DesperateOnly</preferability>
+			<outcomeDoers>
+				<li Class="VRESaurids.IngestionOutcomeDoer_KilledAChild" />
+			</outcomeDoers>
 		</ingestible>
 		<statBases>
 			<MarketValue>7.0</MarketValue>

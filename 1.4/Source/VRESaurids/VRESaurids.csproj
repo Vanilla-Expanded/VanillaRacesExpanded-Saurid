@@ -60,10 +60,11 @@
   <ItemGroup>
     <Compile Include="CompProperties_HumanHatcher.cs" />
     <Compile Include="Comp_HumanHatcher.cs" />
+    <Compile Include="IngestionOutcomeDoer_KilledAChild.cs" />
     <Compile Include="ITab_GenesEgg.cs" />
-    <Compile Include="Patch_HediffGiver_Heat_OnIntervalPassed.cs" />
-    <Compile Include="Patch_Hediff_Pregnant_PostAdd.cs" />
     <Compile Include="Patch_HediffGiver_Hypothermia_OnIntervalPassed.cs" />
+    <Compile Include="Patch_Hediff_Pregnant_Tick.cs" />
+    <Compile Include="Patch_HediffGiver_Heat_OnIntervalPassed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScenPart_StartingHumanEggs.cs" />
     <Compile Include="ThoughtWorker_PheromoneAttraction.cs" />

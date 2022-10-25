@@ -72,7 +72,7 @@
 				<li>Pawn/CenterFrill/CenterFrill10</li>
 			</graphicPaths>
 			<colorType>Hair</colorType>
-			<layer>PostHeadgear</layer>
+			<layer>PostSkin</layer>
 		</graphicData>
 		<symbolPack>
 			<prefixSymbols>

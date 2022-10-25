@@ -11,6 +11,10 @@
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<customEffectDescriptions>
+			<li>Lays eggs instead of pregnancy and live birth.</li>
+			<li>Laying eggs makes the pawn temporarily infertile.</li>
+		</customEffectDescriptions>
 		<symbolPack>
 			<wholeNameSymbols>
 				<li>
@@ -59,8 +63,11 @@
 		<biostatMet>6</biostatMet>
 		<statOffsets>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
-			<ComfyTemperatureMax>-5</ComfyTemperatureMax> 
+			<ComfyTemperatureMax>-5</ComfyTemperatureMax>
 		</statOffsets>
+		<customEffectDescriptions>
+			<li>Suffers from a much more drastic version of hypothermia/hyperthermia where capacities quickly decrease till death.</li>
+		</customEffectDescriptions>
 		<symbolPack>
 			<wholeNameSymbols>
 				<li>
@@ -89,6 +96,9 @@
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
+		<customEffectDescriptions>
+			<li>Improved relations with any pawn of the same xenotype.</li>
+		</customEffectDescriptions>
 	</GeneDef>
 
 </Defs>

@@ -18,15 +18,22 @@ namespace VRESaurids
 		{
             if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasGene(VRESauridsDefOf.VRESaurids_Oviparous) ?? false))
             {
-				// Lay the egg.
-				Thing egg = LayHumanEgg(__instance.mother, __instance.father, __instance.geneSet);
-				GenSpawn.Spawn(egg, __instance.pawn.Position, __instance.pawn.Map);
-				// Make temporarily sterile.
-				Hediff hediff = HediffMaker.MakeHediff(VRESauridsDefOf.VRESaurids_EggFatigue, __instance.pawn);
-				__instance.pawn.health.AddHediff(hediff);
-                // Tell the player.
-                LetterMaker.MakeLetter("VRESaurids.EggLaidLabel".Translate(__instance.mother.LabelShort), "VRESaurids.EggLaidDesc".Translate(__instance.mother.LabelShort), LetterDefOf.PositiveEvent, new LookTargets(egg));
-				__instance.pawn.health.RemoveHediff(__instance);
+                try
+				{
+					// Lay the egg.
+					Thing egg = LayHumanEgg(__instance.mother, __instance.father, __instance.geneSet);
+					GenSpawn.Spawn(egg, __instance.pawn.Position, __instance.pawn.Map);
+					// Make temporarily sterile.
+					Hediff hediff = HediffMaker.MakeHediff(VRESauridsDefOf.VRESaurids_EggFatigue, __instance.pawn);
+					__instance.pawn.health.AddHediff(hediff);
+					// Tell the player.
+					LetterMaker.MakeLetter("VRESaurids.EggLaidLabel".Translate(__instance.mother.LabelShort), "VRESaurids.EggLaidDesc".Translate(__instance.mother.LabelShort), LetterDefOf.PositiveEvent, new LookTargets(egg));
+					__instance.pawn.health.RemoveHediff(__instance);
+				}
+				catch (Exception ex)
+                {
+					Log.Message("Error Suppressed: " + ex.ToString());
+                }
 				return false;
             }
 			return true;

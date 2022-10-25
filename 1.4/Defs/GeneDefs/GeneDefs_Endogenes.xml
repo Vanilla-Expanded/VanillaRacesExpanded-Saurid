@@ -5,10 +5,11 @@
 		<defName>VRESaurids_SauridClaws</defName>
 		<label>saurid claws</label>
 		<description>Carriers of this gene have hands that partially resemble dinosaur claws. This has a slight impact on their ability to manipulate objects, but allows them to deal deep cuts in melee combat.</description>
+		<geneClass>VanillaGenesExpanded.Gene_AddsHediff</geneClass>
 		<iconPath>UI/GeneIcons/Gene_HandsSaurid</iconPath>
 		<displayOrderInCategory>320</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>0</biostatMet>
 		<customEffectDescriptions>
 			<li>Causes cuts when using unarmed attacks.</li>
 		</customEffectDescriptions>

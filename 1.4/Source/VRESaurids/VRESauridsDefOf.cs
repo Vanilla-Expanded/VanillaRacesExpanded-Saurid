@@ -17,6 +17,10 @@ namespace VRESaurids
             DefOfHelper.EnsureInitializedInCtor(typeof(VRESauridsDefOf));
         }
 
+        public static TaleDef VRESaurids_KilledEggChild;
+
+        public static ThoughtDef VRESaurids_KilledEggChildThought;
+
         public static XenotypeDef VRESaurids_Saurid;
 
         public static GeneDef VRESaurids_ColdBlooded;

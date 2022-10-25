@@ -13,7 +13,7 @@
 		<replacesFaction>OutlanderRough</replacesFaction>
 		<xenotypeSet Inherit="False">
 			<xenotypeChances>
-				<VRESaurids_Saurid>10</VRESaurids_Saurid>
+				<VRESaurids_Saurid>8</VRESaurids_Saurid>
 				<Hussar>0.05</Hussar>
 				<Neanderthal>0.025</Neanderthal>
 				<Impid>0.1</Impid>

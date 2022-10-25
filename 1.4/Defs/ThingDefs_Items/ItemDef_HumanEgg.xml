@@ -4,14 +4,14 @@
 	<ThingDef>
 		<defName>VRESaurids_HumanEgg</defName>
 		<label>human egg (fert.)</label>
-		<description>A fertilized human egg. If all goes well, it should hatch into a child.</description>
+		<description>Fertilized human egg. If all goes well, it should hatch into a human baby. It definitely shouldn’t but can be eaten raw. Eating it is treated the same way as killing a baby.</description>
 		<thingClass>ThingWithComps</thingClass>
 		<possessionCount>1</possessionCount>
 		<graphicData>
-			<texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
+			<texPath>Item/EggFertilized_Human</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
 			<color>(245, 245, 245)</color>
-			<drawSize>1.5</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<tickerType>Normal</tickerType>
 		<socialPropernessMatters>true</socialPropernessMatters>
@@ -33,6 +33,9 @@
 			<ingestSound>RawMeat_Eat</ingestSound>
 			<tasteThought>AteRawFood</tasteThought>
 			<preferability>DesperateOnly</preferability>
+			<outcomeDoers>
+				<li Class="VRESaurids.IngestionOutcomeDoer_KilledAChild" />
+			</outcomeDoers>
 		</ingestible>
 		<statBases>
 			<MarketValue>7.0</MarketValue>

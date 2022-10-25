@@ -11,7 +11,7 @@ using HarmonyLib;
 namespace VRESaurids
 {
     [HarmonyPatch(typeof(Hediff_Pregnant), "Tick")]
-    public static class Patch_Hediff_Pregnant_PostAdd
+    public static class Patch_Hediff_Pregnant_Tick
 	{
 		[HarmonyPrefix]
 		public static bool Prefix(Hediff_Pregnant __instance)

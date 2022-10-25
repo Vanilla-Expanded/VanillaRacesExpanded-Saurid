@@ -10,7 +10,7 @@
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
-		<biostatMet>-2</biostatMet>
+		<biostatMet>-1</biostatMet>
 		<symbolPack>
 			<wholeNameSymbols>
 				<li>
@@ -56,7 +56,7 @@
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>4</biostatMet>
+		<biostatMet>6</biostatMet>
 		<statOffsets>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>-5</ComfyTemperatureMax> 
@@ -88,7 +88,7 @@
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>-1</biostatMet>
+		<biostatMet>0</biostatMet>
 	</GeneDef>
 
 </Defs>

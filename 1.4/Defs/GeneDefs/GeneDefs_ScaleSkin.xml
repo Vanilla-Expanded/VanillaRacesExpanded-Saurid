@@ -26,7 +26,6 @@
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 		</statOffsets>
 		<missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
-		<forcedHair>Bald</forcedHair>
 		<graphicData>
 			<fur>VRESaurids_ScaleSkin</fur>
 			<tattoosVisible>true</tattoosVisible>

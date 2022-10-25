@@ -52,28 +52,17 @@
 
 	<!-- ====== Headbones ====== -->
 
-	<GeneDef ParentName="GeneHeadboneBase">
+	<GeneDef ParentName="GeneHairStyleBase">
 		<defName>VRESaurids_CenterFrill</defName>
 		<label>center-frill</label>
 		<description>Carriers of this gene grow a lizard-like frill protruding from the top of their head.</description>
 		<iconPath>UI/GeneIcons/Gene_HeadboneCenterFrill</iconPath>
-		<graphicData>
-			<graphicPaths>
-				<li>Pawn/CenterFrill/CenterFrill</li>
-				<li>Pawn/CenterFrill/CenterFrill1</li>
-				<li>Pawn/CenterFrill/CenterFrill2</li>
-				<li>Pawn/CenterFrill/CenterFrill3</li>
-				<li>Pawn/CenterFrill/CenterFrill4</li>
-				<li>Pawn/CenterFrill/CenterFrill5</li>
-				<li>Pawn/CenterFrill/CenterFrill6</li>
-				<li>Pawn/CenterFrill/CenterFrill7</li>
-				<li>Pawn/CenterFrill/CenterFrill8</li>
-				<li>Pawn/CenterFrill/CenterFrill9</li>
-				<li>Pawn/CenterFrill/CenterFrill10</li>
-			</graphicPaths>
-			<colorType>Hair</colorType>
-			<layer>PostSkin</layer>
-		</graphicData>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Saurid</li>
+			</tags>
+		</hairTagFilter>
 		<symbolPack>
 			<prefixSymbols>
 				<li>

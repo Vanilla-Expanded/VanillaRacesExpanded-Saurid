@@ -11,6 +11,9 @@
 		<displayOrderInCategory>100</displayOrderInCategory>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>-1</biostatMet>
+		<exclusionTags>
+			<li>Egglaying</li>
+		</exclusionTags>
 		<customEffectDescriptions>
 			<li>Lays eggs instead of pregnancy and live birth.</li>
 			<li>Laying eggs makes the pawn temporarily infertile.</li>

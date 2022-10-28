@@ -202,7 +202,7 @@ namespace VRESaurids
         {
             base.PostExposeData();
             Scribe_Values.Look(ref gestateProgress, "gestateProgress");
-            Scribe_References.Look(ref hatchee, "hatchee");
+            Scribe_Deep.Look(ref hatchee, "hatchee");
             Scribe_References.Look(ref mother, "mother");
             Scribe_References.Look(ref father, "father");
             Scribe_Deep.Look(ref geneSet, "geneSet");

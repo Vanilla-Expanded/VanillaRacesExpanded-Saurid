@@ -80,7 +80,7 @@ namespace VRESaurids
             base.CompTick();
             if(xenotype == null)
             {
-                xenotype = VRESauridsDefOf.VRESaurids_Saurid;
+                xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
             }
             if(hatchee == null)
             {

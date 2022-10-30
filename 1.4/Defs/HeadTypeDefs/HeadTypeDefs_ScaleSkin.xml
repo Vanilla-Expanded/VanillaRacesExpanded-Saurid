@@ -5,7 +5,7 @@
 
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>VRESaurids_ScaleSkin_Average</defName>
-		<graphicPath>Pawn/ScalySkin/ScalySkin_Average_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Average_Normal</graphicPath>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
 		<requiredGenes>
@@ -17,7 +17,7 @@
 
 	<HeadTypeDef ParentName="NarrowBase">
 		<defName>VRESaurids_ScaleSkin_Narrow</defName>
-		<graphicPath>Pawn/ScalySkin/ScalySkin_Narrow_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Narrow_Normal</graphicPath>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
 		<requiredGenes>
@@ -28,7 +28,7 @@
 	<!-- Gaunt -->
 	<HeadTypeDef ParentName="AverageBase">
 		<defName>VRESaurids_ScaleSkin_Gaunt</defName>
-		<graphicPath>Pawn/ScalySkin/ScalySkin_Gaunt_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Gaunt_Normal</graphicPath>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
 		<selectionWeight>99999</selectionWeight>
@@ -42,7 +42,7 @@
 
 	<HeadTypeDef ParentName="HeavyJawBase">
 		<defName>VRESaurids_ScaleSkin_Heavy</defName>
-		<graphicPath>Pawn/ScalySkin/ScalySkin_Wide_Normal</graphicPath>
+		<graphicPath>Things/Pawn/Humanlike/Heads/ScalySkin_Wide_Normal</graphicPath>
 		<randomChosen>false</randomChosen>
 		<gender>None</gender>
 		<selectionWeight>99999</selectionWeight>

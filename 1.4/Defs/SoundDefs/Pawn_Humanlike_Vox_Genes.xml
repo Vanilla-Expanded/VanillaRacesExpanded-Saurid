@@ -13,7 +13,7 @@
 						<clipFolderPath>Pawn/Humanlike/Saurid/Call</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>20</volumeRange>
+				<volumeRange>10</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -30,7 +30,7 @@
 						<clipFolderPath>Pawn/Humanlike/Saurid/Death</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>20</volumeRange>
+				<volumeRange>10</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -47,7 +47,7 @@
 						<clipFolderPath>Pawn/Humanlike/Saurid/Wounded</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>20</volumeRange>
+				<volumeRange>10</volumeRange>
 				<pitchRange>0.95~1.05</pitchRange>
 				<sustainLoop>False</sustainLoop>
 				<repeatMode>NeverTwice</repeatMode>

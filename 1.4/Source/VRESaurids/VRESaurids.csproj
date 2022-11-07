@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_DangerousTemperature.cs" />
     <Compile Include="CompProperties_HumanHatcher.cs" />
     <Compile Include="Comp_HumanHatcher.cs" />
     <Compile Include="IngestionOutcomeDoer_KilledAChild.cs" />

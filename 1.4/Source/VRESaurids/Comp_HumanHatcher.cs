@@ -131,7 +131,8 @@ namespace VRESaurids
                 }
             }
             // Send Letter
-            LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.PositiveEvent, new LookTargets(hatchee));
+            ChoiceLetter letter = LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.BabyBirth, new LookTargets(hatchee));
+            Find.LetterStack.ReceiveLetter(letter);
             hatched = true;
         }
 

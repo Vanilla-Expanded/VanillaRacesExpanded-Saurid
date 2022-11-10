@@ -11,5 +11,8 @@
 	<VRESaurids.EggLaidDesc>{0} has laid an egg due to being oviparous. Make sure to keep the egg in a safe environment, under the roof and between 0°C - 50°C. After some time the egg will hatch into a child. {0} will be unable to lay another egg until their body recovers from this process.</VRESaurids.EggLaidDesc>
 	<VRESaurids.EggHatchedLabel>{0}'s egg hatched!</VRESaurids.EggHatchedLabel>
 	<VRESaurids.EggHatchedDesc>{0}'s egg has hatched successfully, adding a new baby to the colony! Remember to take care of them and ensure they grow up healthy.</VRESaurids.EggHatchedDesc>
+	<VRESaurids.CannotOviparous>oviparous</VRESaurids.CannotOviparous>
+	<VRESaurids.ColdBloodedDanger>Cold-blooded Danger!</VRESaurids.ColdBloodedDanger>
+	<VRESaurids.ColdBloodedDangerExplanation>Cold-blooded pawns will fall to extreme temperatures much easier and faster than others, these pawns are currently at risk</VRESaurids.ColdBloodedDangerExplanation>
 
 </LanguageData>

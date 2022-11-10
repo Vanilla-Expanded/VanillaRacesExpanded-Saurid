@@ -30,8 +30,12 @@
 	</loadAfter>
 
 	<packageId>vanillaracesexpanded.saurid</packageId>
-	<description>
+	<description>Vanilla Races Expanded is a brand new series of mods to enhance Biotech features, add to the storytelling and the world-building of RimWorld, and to introduce new, cool types ofxenohumans, complete with their own unique genes, behaviors, mechanics and items.
 
+This mod adds a new race called Saurids, featuring xenohumans with lizard characteristics. A number of new genes will allow players to turn their pawns into cold-blooded scaly monstrosities, whilst a new Saurid faction will be added alongside the Outlander factions and will provide a steady supply of Saurids for the players that desire it.
 
-	</description>
+Genetically spliced with synthesized dinosaur genetic material for improved compatibility with arid environments, saurids are cold-blooded isolationists with harsh voices and extremely low metabolisms. Their sharp claws and hardened scales make them particularly suited to melee encounters.
+
+For workers looking for higher-wage jobs, saurid xenogerms are offered alongside employment packages to particularly arid and hot planets. As conditions are quite harsh, they experience an attitude shift to be less social and consume fewer calories which allows them to be more profitable. As they are not excluded from starting families, saurids can communicate with each other using pheromones and are oviparous to reduce medical complications caused by lack of proper social infrastructure.
+</description>
 </ModMetaData>

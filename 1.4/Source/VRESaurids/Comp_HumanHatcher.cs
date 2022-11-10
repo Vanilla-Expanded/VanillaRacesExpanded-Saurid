@@ -80,7 +80,7 @@ namespace VRESaurids
             base.CompTick();
             if(xenotype == null)
             {
-                xenotype = VRESauridsDefOf.VRESaurids_Saurid;
+                xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
             }
             if(hatchee == null)
             {
@@ -131,7 +131,8 @@ namespace VRESaurids
                 }
             }
             // Send Letter
-            LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.PositiveEvent, new LookTargets(hatchee));
+            ChoiceLetter letter = LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.BabyBirth, new LookTargets(hatchee));
+            Find.LetterStack.ReceiveLetter(letter);
             hatched = true;
         }
 
@@ -202,7 +203,7 @@ namespace VRESaurids
         {
             base.PostExposeData();
             Scribe_Values.Look(ref gestateProgress, "gestateProgress");
-            Scribe_References.Look(ref hatchee, "hatchee");
+            Scribe_Deep.Look(ref hatchee, "hatchee");
             Scribe_References.Look(ref mother, "mother");
             Scribe_References.Look(ref father, "father");
             Scribe_Deep.Look(ref geneSet, "geneSet");

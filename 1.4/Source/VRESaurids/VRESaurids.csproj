@@ -58,11 +58,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alert_DangerousTemperature.cs" />
     <Compile Include="CompProperties_HumanHatcher.cs" />
     <Compile Include="Comp_HumanHatcher.cs" />
     <Compile Include="IngestionOutcomeDoer_KilledAChild.cs" />
     <Compile Include="ITab_GenesEgg.cs" />
     <Compile Include="Patch_HediffGiver_Hypothermia_OnIntervalPassed.cs" />
+    <Compile Include="Patch_HumanEmbryo_CanImplantFloatOption.cs" />
+    <Compile Include="Patch_Recipe_ExtractOvum_CompletableEver.cs" />
+    <Compile Include="Patch_Recipe_ImplantEmbryo_CompletableEver.cs" />
     <Compile Include="Patch_Hediff_Pregnant_Tick.cs" />
     <Compile Include="Patch_HediffGiver_Heat_OnIntervalPassed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

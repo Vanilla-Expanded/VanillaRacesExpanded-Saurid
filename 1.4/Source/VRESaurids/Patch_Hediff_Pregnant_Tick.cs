@@ -27,7 +27,8 @@ namespace VRESaurids
 					Hediff hediff = HediffMaker.MakeHediff(VRESauridsDefOf.VRESaurids_EggFatigue, __instance.pawn);
 					__instance.pawn.health.AddHediff(hediff);
 					// Tell the player.
-					LetterMaker.MakeLetter("VRESaurids.EggLaidLabel".Translate(__instance.mother.LabelShort), "VRESaurids.EggLaidDesc".Translate(__instance.mother.LabelShort), LetterDefOf.PositiveEvent, new LookTargets(egg));
+					ChoiceLetter letter = LetterMaker.MakeLetter("VRESaurids.EggLaidLabel".Translate(__instance.pawn.LabelShort), "VRESaurids.EggLaidDesc".Translate(__instance.pawn.LabelShort), LetterDefOf.PositiveEvent);
+					Find.LetterStack.ReceiveLetter(letter);
 					__instance.pawn.health.RemoveHediff(__instance);
 				}
 				catch (Exception ex)

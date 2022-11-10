@@ -66,7 +66,6 @@
 		<biostatMet>6</biostatMet>
 		<statOffsets>
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
-			<ComfyTemperatureMax>-5</ComfyTemperatureMax>
 		</statOffsets>
 		<customEffectDescriptions>
 			<li>Suffers from a much more drastic version of hypothermia/hyperthermia where capacities quickly decrease till death.</li>

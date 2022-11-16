@@ -140,7 +140,8 @@ namespace VRESaurids
                 }
             }
             // Send Letter
-            ChoiceLetter_BabyBirth choiceLetter_BabyBirth = (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.BabyBirth, (TargetInfo)hatchee);
+            ChoiceLetter_BabyBirth choiceLetter_BabyBirth = (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother.NameShortColored), "VRESaurids.EggHatchedDesc".Translate(mother.NameShortColored), LetterDefOf.BabyBirth, (TargetInfo)hatchee);
+            choiceLetter_BabyBirth.Start();
             Find.LetterStack.ReceiveLetter(choiceLetter_BabyBirth);
             hatched = true;
         }

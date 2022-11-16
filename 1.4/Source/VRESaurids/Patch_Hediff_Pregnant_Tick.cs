@@ -18,7 +18,7 @@ namespace VRESaurids
 		{
             if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasGene(VRESauridsDefOf.VRESaurids_Oviparous) ?? false))
             {
-                try
+				try
 				{
 					// Lay the egg.
 					Thing egg = LayHumanEgg(__instance.mother, __instance.father, __instance.geneSet);
@@ -27,8 +27,7 @@ namespace VRESaurids
 					Hediff hediff = HediffMaker.MakeHediff(VRESauridsDefOf.VRESaurids_EggFatigue, __instance.pawn);
 					__instance.pawn.health.AddHediff(hediff);
 					// Tell the player.
-					ChoiceLetter letter = LetterMaker.MakeLetter("VRESaurids.EggLaidLabel".Translate(__instance.pawn.LabelShort), "VRESaurids.EggLaidDesc".Translate(__instance.pawn.LabelShort), LetterDefOf.PositiveEvent);
-					Find.LetterStack.ReceiveLetter(letter);
+					Find.LetterStack.ReceiveLetter("VRESaurids.EggLaidLabel".Translate(__instance.pawn.NameShortColored), "VRESaurids.EggLaidDesc".Translate(__instance.pawn.NameShortColored), LetterDefOf.PositiveEvent, (TargetInfo)__instance.pawn);
 					__instance.pawn.health.RemoveHediff(__instance);
 				}
 				catch (Exception ex)
@@ -46,6 +45,14 @@ namespace VRESaurids
 			thing = ThingMaker.MakeThing(VRESauridsDefOf.VRESaurids_HumanEgg);
 			Comp_HumanHatcher comp = thing.TryGetComp<Comp_HumanHatcher>();
 			comp.mother = mother;
+			if(mother?.genes?.xenotype == father?.genes?.xenotype)
+            {
+				comp.xenotype = mother.genes.xenotype;
+            }
+            else
+            {
+				comp.xenotype = XenotypeDefOf.Baseliner;
+            }
 			if(father != null)
             {
 				comp.father = father;

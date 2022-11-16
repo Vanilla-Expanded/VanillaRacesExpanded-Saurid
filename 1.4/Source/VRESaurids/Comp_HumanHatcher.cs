@@ -64,6 +64,15 @@ namespace VRESaurids
                 hatchee.genes.hybrid = true;
                 hatchee.genes.xenotypeName = "Hybrid".Translate();
             }
+            
+            if(mother != null)
+            {
+                hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, mother);
+            }
+            if (father != null)
+            {
+                hatchee.relations.AddDirectRelation(PawnRelationDefOf.Parent, father);
+            }
         }
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
@@ -131,9 +140,14 @@ namespace VRESaurids
                 }
             }
             // Send Letter
-            ChoiceLetter letter = LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.BabyBirth, new LookTargets(hatchee));
-            Find.LetterStack.ReceiveLetter(letter);
+            ChoiceLetter_BabyBirth choiceLetter_BabyBirth = (ChoiceLetter_BabyBirth)LetterMaker.MakeLetter("VRESaurids.EggHatchedLabel".Translate(mother), "VRESaurids.EggHatchedDesc".Translate(mother), LetterDefOf.BabyBirth, (TargetInfo)hatchee);
+            Find.LetterStack.ReceiveLetter(choiceLetter_BabyBirth);
             hatched = true;
+        }
+
+        public override bool AllowStackWith(Thing other)
+        {
+            return false;
         }
 
         public override string CompInspectStringExtra()

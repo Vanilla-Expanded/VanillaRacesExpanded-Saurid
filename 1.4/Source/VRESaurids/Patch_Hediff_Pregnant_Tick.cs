@@ -21,7 +21,7 @@ namespace VRESaurids
 				try
 				{
 					// Lay the egg.
-					Thing egg = LayHumanEgg(__instance.mother, __instance.father, __instance.geneSet);
+					Thing egg = LayHumanEgg(__instance.pawn, __instance.father, __instance.geneSet);
 					GenSpawn.Spawn(egg, __instance.pawn.Position, __instance.pawn.Map);
 					// Make temporarily sterile.
 					Hediff hediff = HediffMaker.MakeHediff(VRESauridsDefOf.VRESaurids_EggFatigue, __instance.pawn);

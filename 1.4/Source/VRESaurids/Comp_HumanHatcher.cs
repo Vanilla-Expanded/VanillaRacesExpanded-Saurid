@@ -51,9 +51,14 @@ namespace VRESaurids
         {
             PawnGenerationRequest request = new PawnGenerationRequest(mother?.kindDef ?? PawnKindDefOf.Colonist, Faction.OfPlayer, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, allowDead: false, allowDowned: true, canGeneratePawnRelations: true, mustBeCapableOfViolence: false, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, allowPregnant: false, allowFood: true, allowAddictions: true, inhabitant: false, certainlyBeenInCryptosleep: false, forceRedressWorldPawnIfFormerColonist: false, worldPawnFactionDoesntMatter: false, 0f, 0f, null, 1f, null, null, null, null, null, null, null, null, PregnancyUtility.RandomLastName(mother, null, father), null, null, null, forceNoIdeo: true, forceNoBackstory: false, forbidAnyTitle: false, forcedXenotype: xenotype, forcedEndogenes: (geneSet != null) ? geneSet.genes : PregnancyUtility.GetInheritedGenes(father, mother), forcedCustomXenotype: null, allowedXenotypes: null, forceBaselinerChance: 0f, developmentalStages: DevelopmentalStage.Newborn);
             hatchee = PawnGenerator.GeneratePawn(request);
-            if (mother == null && father == null)
+            if (mother != null && father != null)
             {
-                hatchee.genes.SetXenotypeDirect(xenotype);
+                if (GeneUtility.SameHeritableXenotype(mother, father) && mother.genes.UniqueXenotype)
+                {
+                    hatchee.genes.xenotypeName = mother.genes.xenotypeName;
+                    hatchee.genes.iconDef = mother.genes.iconDef;
+                }
+                //hatchee.genes.SetXenotypeDirect(xenotype);
             }
             else if (PregnancyUtility.TryGetInheritedXenotype(mother, father, out var xenotype))
             {

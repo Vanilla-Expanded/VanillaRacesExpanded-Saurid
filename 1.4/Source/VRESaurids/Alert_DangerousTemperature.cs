@@ -21,12 +21,25 @@ namespace VRESaurids
             {
                 culpritsResult.Clear();
                 culpritsNames.Clear();
-                foreach (Pawn item in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoSuspended)
+                if (VRESauridsMod.settings.displayColdBloodedWarnings)
                 {
-                    if (item.genes.HasGene(VRESauridsDefOf.VRESaurids_ColdBlooded) && (item.health.hediffSet.HasHediff(VRESauridsDefOf.VRESaurids_HyperthermicSlowdown) || item.health.hediffSet.HasHediff(VRESauridsDefOf.VRESaurids_HypothermicSlowdown)))
+                    foreach (Pawn item in PawnsFinder.AllMapsCaravansAndTravelingTransportPods_Alive_FreeColonists_NoSuspended)
                     {
-                        culpritsResult.Add(item);
-                        culpritsNames.Add(item.Name.ToStringShort);
+                        if (item.genes.HasGene(VRESauridsDefOf.VRESaurids_ColdBlooded))
+                        {
+                            Hediff hyper = item.health.hediffSet.GetFirstHediffOfDef(VRESauridsDefOf.VRESaurids_HyperthermicSlowdown);
+                            if (hyper != null && hyper.Severity >= 0.1f)
+                            {
+                                culpritsResult.Add(item);
+                                culpritsNames.Add(item.Name.ToStringShort);
+                            }
+                            Hediff hypo = item.health.hediffSet.GetFirstHediffOfDef(VRESauridsDefOf.VRESaurids_HypothermicSlowdown);
+                            if (hypo != null && hypo.Severity >= 0.1f)
+                            {
+                                culpritsResult.Add(item);
+                                culpritsNames.Add(item.Name.ToStringShort);
+                            }
+                        }
                     }
                 }
                 return culpritsResult;

@@ -2,3 +2,7 @@ C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Assemblie
 C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.AssemblyReference.cache
 C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.CoreCompileInputs.cache
 C:\RWModCategories\VanillaExpandedTeam\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.dll
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.4\Assemblies\VRESaurids.dll
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.AssemblyReference.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.csproj.CoreCompileInputs.cache
+F:\SteamLibrary\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.4\Source\VRESaurids\obj\Debug\VRESaurids.dll

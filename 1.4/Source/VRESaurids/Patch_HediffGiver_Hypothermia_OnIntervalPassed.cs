@@ -26,6 +26,14 @@ namespace VRESaurids
 
 		public static void OnIntervalPassed(Pawn pawn, Hediff cause)
 		{
+			// Remove that fuckin hypothermia.
+			Hediff hypothermia = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia);
+			if (hypothermia != null)
+			{
+				pawn.health.RemoveHediff(hypothermia);
+			}
+
+			// Hypothermic Shutdown
 			float ambientTemperature = pawn.AmbientTemperature;
 			FloatRange floatRange = pawn.ComfortableTemperatureRange();
 			FloatRange floatRange2 = pawn.SafeTemperatureRange();
@@ -62,6 +70,7 @@ namespace VRESaurids
 					pawn.TakeDamage(dinfo);
 				}
 			}
+			// Backup for removing hypothermia applied througgh other means.
 		}
 	}
 }

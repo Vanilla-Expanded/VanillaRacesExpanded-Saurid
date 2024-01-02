@@ -13,6 +13,7 @@
 			<color>(245, 245, 245)</color>
 			<drawSize>1.0</drawSize>
 		</graphicData>
+		<tradeability>None</tradeability>
 		<tickerType>Normal</tickerType>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<healthAffectsPrice>false</healthAffectsPrice>
@@ -38,7 +39,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<statBases>
-			<MarketValue>7.0</MarketValue>
+			<MarketValue>100</MarketValue>
 			<Mass>0.20</Mass>
 			<Beauty>2</Beauty>
 			<MaxHitPoints>20</MaxHitPoints>

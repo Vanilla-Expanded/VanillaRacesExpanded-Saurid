@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ====== Headbones ====== -->
+
+	<GeneDef ParentName="GeneEarsBase">
+		<defName>VRESaurids_FrilledEars</defName>
+		<label>frilled ears</label>
+		<description>Carriers of this gene have lizard-like frilled ears.</description>
+		<iconPath>UI/GeneIcons/Gene_EarFrilled</iconPath>
+		
+		<renderNodeProperties>
+			<li>
+				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+				<texPaths><li>Pawn/FrilledEars/FrilledEars</li>
+				<li>Pawn/FrilledEars/FrilledEars1</li></texPaths>
+				<colorType>Skin</colorType>
+				<parentTagDef>Head</parentTagDef>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<defaultData>
+						<layer>70</layer>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>frill</symbol>
+				</li>
+				<li>
+					<symbol>iguana</symbol>
+				</li>
+				<li>
+					<symbol>lizard</symbol>
+				</li>
+				<li>
+					<symbol>spine</symbol>
+				</li>
+				<li>
+					<symbol>reptile</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>spike</symbol>
+				</li>
+				<li>
+					<symbol>lance</symbol>
+				</li>
+				<li>
+					<symbol>frill</symbol>
+				</li>
+				<li>
+					<symbol>saurus</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- ====== Headbones ====== -->
+
+	<GeneDef ParentName="GeneHairStyleBase">
+		<defName>VRESaurids_CenterFrill</defName>
+		<label>center-frill</label>
+		<description>Carriers of this gene grow a lizard-like frill protruding from the top of their head.</description>
+		<iconPath>UI/GeneIcons/Gene_HeadboneCenterFrill</iconPath>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>Saurid</li>
+			</tags>
+		</hairTagFilter>
+		<symbolPack>
+			<prefixSymbols>
+				<li>
+					<symbol>frill</symbol>
+				</li>
+				<li>
+					<symbol>iguana</symbol>
+				</li>
+				<li>
+					<symbol>lizard</symbol>
+				</li>
+				<li>
+					<symbol>spine</symbol>
+				</li>
+				<li>
+					<symbol>reptile</symbol>
+				</li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li>
+					<symbol>spike</symbol>
+				</li>
+				<li>
+					<symbol>lance</symbol>
+				</li>
+				<li>
+					<symbol>frill</symbol>
+				</li>
+				<li>
+					<symbol>saurus</symbol>
+				</li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<!-- ====== Tails ====== -->
+
+	<GeneDef ParentName="GeneTailBase">
+		<defName>VRESaurids_GeckoTail</defName>
+		<label>gecko tail</label>
+		<description>Carriers of this gene grow a short, scaly tail that has no function what-so-ever.</description>
+		<iconPath>UI/GeneIcons/Gene_TailGecko</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<renderNodeProperties>
+			<li>
+				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+				<texPath>Pawn/GeckoTail/GeckoTail</texPath>
+				<colorType>Skin</colorType>
+				<overrideMeshSize>(1, 1)</overrideMeshSize>
+				<parentTagDef>Body</parentTagDef>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>-2</layer>
+					</defaultData>
+					<dataNorth>
+						<offset>(0, 0.25, -0.45)</offset>
+						<layer>90</layer>
+					</dataNorth>
+					<dataSouth>
+						<offset>(0, -0.1, -0.35)</offset>
+					</dataSouth>
+					<dataEast>
+						<offset>(-0.35, -0.1, -0.25)</offset>
+					</dataEast>
+					<dataWest>
+						<offset>(0.35, -0.1, -0.25)</offset>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		
+	</GeneDef>
+
+</Defs>

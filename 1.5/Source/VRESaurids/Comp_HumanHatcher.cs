@@ -60,11 +60,11 @@ namespace VRESaurids
                     hatchee.genes.xenotypeName = mother.genes.xenotypeName;
                     hatchee.genes.iconDef = mother.genes.iconDef;
                 }
-                //hatchee.genes.SetXenotypeDirect(xenotype);
             }
-            else if (TryGetInheritedXenotype(mother, father, out var xenotype))
+            
+            if (TryGetInheritedXenotype(mother, father, out var hatcheeXenotype))
             {
-                hatchee.genes?.SetXenotypeDirect(xenotype);
+                hatchee.genes?.SetXenotypeDirect(hatcheeXenotype);
             }
             else if (ShouldByHybrid(mother, father))
             {

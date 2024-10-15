@@ -41,8 +41,7 @@ namespace VRESaurids
 
 		public static Thing LayHumanEgg(Pawn mother, Pawn father, GeneSet geneSet)
         {
-			Thing thing;
-			thing = ThingMaker.MakeThing(VRESauridsDefOf.VRESaurids_HumanEgg);
+			Thing thing = ThingMaker.MakeThing(VRESauridsDefOf.VRESaurids_HumanEgg);
 			Comp_HumanHatcher comp = thing.TryGetComp<Comp_HumanHatcher>();
 			comp.mother = mother;
 			if(mother?.genes?.Xenotype == father?.genes?.Xenotype)

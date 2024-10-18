@@ -885,7 +885,7 @@
         </member>
         <member name="M:HarmonyLib.Harmony.GetOriginalMethod(System.Reflection.MethodInfo)">
             <summary>Gets the original method from a given replacement method</summary>
-            <param name="replacement">A replacement method, for example from a stacktrace</param>
+            <param name="replacement">A replacement method (patched original method)</param>
             <returns>The original method/constructor or <c>null</c> if not found</returns>
         </member>
         <member name="M:HarmonyLib.Harmony.GetMethodFromStackframe(System.Diagnostics.StackFrame)">
@@ -1572,6 +1572,11 @@
             <param name="type">The class/type to start with</param>
             <param name="func">The evaluation function returning T</param>
             <returns>The first non-<c>null</c> result, or <c>null</c> if no match</returns>
+        </member>
+        <member name="M:HarmonyLib.AccessTools.Identifiable(System.Reflection.MethodInfo)">
+            <summary>Creates an identifiable version of a method</summary>
+            <param name="method">The method</param>
+            <returns />
         </member>
         <member name="M:HarmonyLib.AccessTools.DeclaredField(System.Type,System.String)">
             <summary>Gets the reflection information for a directly declared field</summary>

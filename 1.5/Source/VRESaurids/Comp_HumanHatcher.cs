@@ -210,18 +210,12 @@ namespace VRESaurids
             yield return new Command_Action()
             {
                 defaultLabel = "DEV: Hatch Now",
-                action = delegate
-                {
-                    Hatch();
-                }
+                action = Hatch
             };
             yield return new Command_Action()
             {
                 defaultLabel = "DEV: Regenerate Child",
-                action = delegate
-                {
-                    RegenerateChild();
-                }
+                action = RegenerateChild
             };
         }
 

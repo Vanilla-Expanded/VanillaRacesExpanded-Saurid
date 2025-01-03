@@ -14,3 +14,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Source\VRESaurids\obj\Debug\VRESaurids.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Assemblies\VRESaurids.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Source\VRESaurids\obj\Debug\VRESaurids.csproj.CopyComplete
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Assemblies\VRESaurids.dll
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Source\VRESaurids\obj\Debug\VRESaurids.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Source\VRESaurids\obj\Debug\VRESaurids.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\VanillaRacesExpanded-Saurid\1.5\Source\VRESaurids\obj\Debug\VRESaurids.dll

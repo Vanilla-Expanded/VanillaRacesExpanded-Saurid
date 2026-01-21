@@ -91,9 +91,9 @@ namespace VRESaurids
             }
         }
 
-        public override void CompTick()
+        public override void CompTickInterval(int delta)
         {
-            base.CompTick();
+            base.CompTickInterval(delta);
             if(xenotype == null)
             {
                 xenotype = mother?.genes?.Xenotype ?? XenotypeDefOf.Baseliner;
@@ -105,7 +105,7 @@ namespace VRESaurids
             }
             if (!TemperatureDamaged)
             {
-                float num = 1f / (Props.daysToHatch * 60000f);
+                float num = delta / (Props.daysToHatch * 60000f);
                 gestateProgress += num;
                 if(gestateProgress > 1f)
                 {

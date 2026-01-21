@@ -14,9 +14,9 @@ namespace VRESaurids
     public static class Patch_Hediff_Pregnant_TickInterval
     {
 		[HarmonyPrefix]
-		public static bool Prefix(Hediff_Pregnant __instance, Pawn ___father)
+		public static bool Prefix(Hediff_Pregnant __instance, Pawn ___father, int delta)
 		{
-            if ((Find.TickManager.TicksAbs % 200 == 0) && (__instance?.pawn?.genes?.HasGene(VRESauridsDefOf.VRESaurids_Oviparous) ?? false))
+            if ((__instance.pawn.IsHashIntervalTick(200, delta)) && (__instance?.pawn?.genes?.HasGene(VRESauridsDefOf.VRESaurids_Oviparous) ?? false))
             {
 				try
 				{
